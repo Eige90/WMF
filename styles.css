@@ -1,0 +1,66 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #333;
+}
+
+#container {
+    width: 500px; /* 20m in pixels */
+    height: 500px; /* 20m in pixels */
+    background-color: black;
+    position: relative;
+}
+
+#red-rectangle {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent; /* 60cm / 2 in pixels */
+    border-right: 15px solid transparent; /* 60cm / 2 in pixels */
+    border-bottom: 30px solid red; /* 60cm in pixels */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+#center-object {
+    width: 32px; /* 80cm in pixels */
+    height: 32px; /* 80cm in pixels */
+    background-color: #88ff00;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#second-object {
+    width: 160px; /* 4m in pixels */
+    height: 160px; /* 4m in pixels */
+    background-color: blue;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+#green-rectangle {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent; /* 60cm / 2 in pixels */
+    border-right: 15px solid transparent; /* 60cm / 2 in pixels */
+    border-bottom: 30px solid green; /* 60cm in pixels */
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 10;
+}
+
+.mowed-area {
+    position: absolute;
+    background-color: gray;
+    z-index: 1;
+}
